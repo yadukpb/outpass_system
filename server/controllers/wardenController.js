@@ -12,6 +12,10 @@ exports.getPendingOutpasses = async (req, res) => {
   }
 };
 
+exports.getWardenDashboardData = (req, res) => {
+  // Implementation
+};
+
 exports.approveOutpass = async (req, res) => {
   console.log('approveOutpass: Started', { params: req.params, body: req.body });
   try {

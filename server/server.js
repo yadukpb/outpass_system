@@ -13,8 +13,7 @@ const securityRoutes = require('./routes/security');
 const coordinatorRoutes = require('./routes/coordinator');
 const applicationRoutes = require('./routes/applications');
 
-const locationController = require('./controllers/locationController');
-const rentalCarController = require('./controllers/rentalCarController');
+
 
 console.log('Route modules imported');
 
@@ -62,9 +61,7 @@ try {
   app.use('/api/coordinator', coordinatorRoutes);
   app.use('/api/applications', applicationRoutes);
 
-  // Location routes
-app.get('/api/locations', locationController.getAllLocations);
-app.post('/api/locations', locationController.createLocation);
+
 
 // Rental Car routes
 app.get('/api/rental-cars', rentalCarController.getAllRentalCars);
